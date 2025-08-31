@@ -21,9 +21,9 @@ app.add_middleware(
 
 # Email configuration - use your SMTP details here
 conf = ConnectionConfig(
-    MAIL_USERNAME="shaktidhar52@gmail.com",
-    MAIL_PASSWORD="cybn lpfh xmzn begb",
-    MAIL_FROM="shaktidhar52@gmail.com",
+    MAIL_USERNAME="particlesolar@gmail.com",
+    MAIL_PASSWORD="olls tlwc cedh juqm",
+    MAIL_FROM="particlesolar@gmail.com",
     MAIL_PORT=587,
     MAIL_SERVER="smtp.gmail.com",
     MAIL_STARTTLS=True,    # instead of MAIL_TLS
@@ -49,7 +49,7 @@ async def root():
 async def send_mail(email: EmailSchema):
     message = MessageSchema(
         subject="New Form Submission",
-        recipients=["shaktidhar52@gmail.com"],  # your receiving email
+        recipients=["particlesolar@gmail.com"],  # your receiving email
         body=f"""
         Name: {email.name}
         Organization: {email.org}
