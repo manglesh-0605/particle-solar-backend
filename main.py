@@ -1,10 +1,13 @@
+import utils.http_session
+import utils.transport
+import utils.session
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, EmailStr
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://localhost:3000",  # your React app URL
+    "https://particlesolar.in",  # your React app URL
     # Add other origins if needed
 ]
 
@@ -22,7 +25,7 @@ app.add_middleware(
 # Email configuration - use your SMTP details here
 conf = ConnectionConfig(
     MAIL_USERNAME="particlesolar@gmail.com",
-    MAIL_PASSWORD="olls tlwc cedh juqm",
+    MAIL_PASSWORD="rftn kxlb iwsp aqea",
     MAIL_FROM="particlesolar@gmail.com",
     MAIL_PORT=587,
     MAIL_SERVER="smtp.gmail.com",
